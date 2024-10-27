@@ -5,7 +5,9 @@ description = "Add your description here"
 authors = [
     { name = "Tateishi Tadatoshi", email = "ishio39@gmail.com" }
 ]
-dependencies = []
+dependencies = [
+    "numpy>=2.1.2",
+]
 readme = "README.md"
 requires-python = ">= 3.8"
 
@@ -22,3 +24,6 @@ allow-direct-references = true
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/scipy_test"]
+
+[tool.rye.scripts]
+main="python src/scipy_test/main.py"
