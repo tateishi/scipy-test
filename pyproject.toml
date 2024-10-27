@@ -27,3 +27,5 @@ packages = ["src/scipy_test"]
 
 [tool.rye.scripts]
 main="python src/scipy_test/main.py"
+ex01="python src/scipy_test/ex01.py"
+ex02="python src/scipy_test/ex02.py"
